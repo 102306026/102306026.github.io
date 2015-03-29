@@ -1,0 +1,22 @@
+
+h1.yellow-font{
+	font-size: 80px;
+}
+
+#content1{
+	color: yellow;
+	background-color: blue;
+}
+#content2{
+	color: black;
+	background: white;
+}
+#content3{
+	color: white;
+	background: red;
+}
+
+a{
+	color: green;
+	font-size: 50px;
+}
