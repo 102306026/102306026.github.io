@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet"type="text/css" href="hw3-app.css">
+</head>
+<body>
+
+    <form name="calc">
+    <input name="output">
+
+    <div id = "operator">
+    	
+    <input type="button" id="1" value="1" onClick="run1()">
+    <input type="button" id="2" value="2" onClick="run2()">
+    <input type="button" id="3" value="3" onClick="run3()">
+    <input type="button" id="sum" value="+" onClick="runsum()">
+    <br/>
+    <input type="button" id="4" value="4" onClick="run4()">
+    <input type="button" id="5" value="5" onClick="run5()">
+    <input type="button" id="6" value="6" onClick="run6()">
+    <input type="button" id="rest" value="-" onClick="runrest()">
+	<br/>
+    <input type="button" id="7" value="7" onClick="run7()">
+    <input type="button" id="8" value="8" onClick="run8()">
+    <input type="button" id="9" value="9" onClick="run9()">
+    <input type="button" id="mult" value="*" onClick="runmult()">	
+    <br/>
+    <input type="button" id="0" value="0" onClick="run0()">
+    <input type="button" id="." value="." onClick="runpoint()">
+    <input type="button" id="div" value="/" onClick="div()">   
+    <br/>
+    <input type="button" id="clear" value="C" onClick="runclear()">
+    <input type="button" id="calc" value="=" onClick="evalu()">
+
+    </div>
+
+    </form>
+
+	
+</body>
+
+<script>
+    var answer= document.calc.output.value;
+
+    function run1(){
+    	document.calc.output.value +="1";
+    }
+    function run2(){
+    	document.calc.output.value +="2";
+    }
+    function run3(){
+    	document.calc.output.value +="3";
+    }
+    function run4(){
+    	document.calc.output.value +="4";
+    }
+    function run5(){
+    	document.calc.output.value +="5";
+    }
+    function run6(){
+    	document.calc.output.value +="6";
+    }
+    function run7(){
+    	document.calc.output.value +="7";
+    }
+    function run8(){
+    	document.calc.output.value +="8";
+    }
+    function run9(){
+    	document.calc.output.value +="9";
+    }
+    function run0(){
+    	document.calc.output.value +="0";
+    }
+    function runsum(){
+    	document.calc.output.value +="+";
+    }
+    function runrest(){
+    	document.calc.output.value +="-";
+    }
+    function runmult(){
+    	document.calc.output.value +="*";
+    }
+    function rundiv(){
+    	document.calc.output.value +="/";
+    }
+    function runpoint(){
+    	document.calc.output.value +=".";
+    }
+    function runclear(){
+    	document.calc.output.value ="";
+    }
+    function evalu(){
+    	var evalo = eval(document.calc.output.value);
+    	document.calc.output.value = evalo;
+    }
+	
+
+</script>
+</html>
